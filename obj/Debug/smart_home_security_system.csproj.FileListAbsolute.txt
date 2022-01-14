@@ -1,0 +1,8 @@
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\bin\Debug\smart_home_security_system.exe.config
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\bin\Debug\smart_home_security_system.exe
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\bin\Debug\smart_home_security_system.pdb
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\obj\Debug\smart_home_security_system.Form1.resources
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\obj\Debug\smart_home_security_system.Properties.Resources.resources
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\obj\Debug\smart_home_security_system.csproj.GenerateResource.Cache
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\obj\Debug\smart_home_security_system.exe
+C:\Users\Orçun\Desktop\ders notları\5.donem\c#\180207092_Orcun_Senler\Codes\C#\smart_home_security_system\obj\Debug\smart_home_security_system.pdb
