@@ -12,14 +12,14 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 Servo Door;
-int hareket=0;
+int move=0;
 int light = A1;
 int light_value=0;
 const byte row = 4;
 const byte column = 4;
-int ileri=10;
-int geri=9;
-int hiz=3;
+int forward=10;
+int back=9;
+int speed=3;
 
 
 
@@ -45,15 +45,15 @@ void setup() {
   pinMode(ledpin2,OUTPUT);
   pinMode(6,OUTPUT);
   pinMode(PIR, INPUT);
-  pinMode(ileri,OUTPUT);
-  pinMode(geri,OUTPUT);
-  pinMode(hiz,OUTPUT);
+  pinMode(forward,OUTPUT);
+  pinMode(back,OUTPUT);
+  pinMode(speed,OUTPUT);
   dht.begin();
   Door.attach(7);
   Door.write(90);
-  digitalWrite(hiz,LOW);
-  digitalWrite(ileri,HIGH);
-  digitalWrite(geri,LOW);
+  digitalWrite(speed,LOW);
+  digitalWrite(forward,HIGH);
+  digitalWrite(back,LOW);
   Serial.begin(9600);
 }
 
@@ -61,18 +61,18 @@ void loop() {
  
   char key = KeyBoard.getKey();
   char keySend;
-  hareket = digitalRead(PIR);
+  move = digitalRead(PIR);
   int mois = dht.readHumidity();
   int temp = dht.readTemperature();
   light_value = analogRead(light);
     if(key!=NO_KEY){keySend=key;
-  sendText = sendText + keySend + "," + temp + "," + mois + "," + light_value + "," + hareket + ",";
+  sendText = sendText + keySend + "," + temp + "," + mois + "," + light_value + "," + move + ",";
   Serial.println(sendText);
   sendText = "";
   }
   else{
   keySend = '*';
-  sendText = sendText + keySend + "," + temp + "," + mois + "," + light_value + "," + hareket + ",";
+  sendText = sendText + keySend + "," + temp + "," + mois + "," + light_value + "," + move + ",";
   Serial.println(sendText);
   sendText = "";
     }
@@ -132,24 +132,24 @@ if(Serial.available())
         }
       else if(dataIn=='r')
         {
-          analogWrite(hiz,175);
+          analogWrite(speed,175);
           
          }
        else if(dataIn=='t')
          {
        
-          analogWrite(hiz,200);
+          analogWrite(speed,200);
           //delay(10000);
         
           }
        else if(dataIn=='u')
           {
-            digitalWrite(hiz,250);
+            digitalWrite(speed,250);
           
             }
          else if(dataIn=='p')
             {
-              digitalWrite(hiz,LOW);
+              digitalWrite(speed,LOW);
               
               }
  
